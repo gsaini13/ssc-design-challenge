@@ -1,0 +1,196 @@
+nav.navbar-inverse {
+    background: rgb(5, 41, 80);
+    background: linear-gradient(
+      90deg,
+      rgba(5, 41, 80, 1) 30%,
+      rgba(9, 75, 104, 1) 80%,
+      rgba(16, 126, 138, 1) 100%
+    );
+    border: 0px;
+    border-radius: 0px;
+    padding-bottom: 20px;
+}
+.user-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(101%) contrast(104%);
+}
+.navbar-brand .app-logo {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+svg.app-logo-text {
+    width: 200px;
+    max-height: 20px;
+    transform: scale(0.7);
+    vertical-align: middle;
+    margin-left: -20px;
+}
+.sidepanel {
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 50px;
+    left: 15px;
+    background-color: #052950;
+    overflow-x: hidden;
+    transition: ease 0.5s;
+    padding-top: 5px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+.sidepanel.closed {
+    width: 50px;
+}
+.sidepanel.opened {
+    width: 200px;
+}
+.sidepanel a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: block;
+    transition: ease 0.3s;
+}
+.sidepanel a.active {
+    background: rgb(5, 41, 80);
+    background: linear-gradient(
+      90deg,
+      rgba(9, 75, 104, 1) 20%,
+      rgba(16, 126, 138, 1) 100%
+    );
+}
+.sidepanel.closed a {
+    text-align: center;
+}
+.sidepanel.opened a {
+    padding: 10px 15px;
+}
+.sidepanel.closed  a span {
+    display: none !important;
+}
+.sidepanel a span {
+    display: inline-block !important;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10px;
+    min-width: 180px;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+}
+.sidepanel a:hover {
+    color: #f1f1f1;
+    background: rgb(5, 41, 80);
+    background: linear-gradient( 
+    90deg, rgba(9, 75, 104, 1) 20%, rgba(16, 126, 138, 1) 100% );
+}
+.sidepanel button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+.sidepanel.opened button {
+    text-align: right;
+}
+.container-right {
+    background: #FFFFFF;
+    margin-right: 20px;
+    position: relative;
+    top: -43px;
+    height: calc(100% - 100px);
+    transition: ease 0.5s;
+    padding: 10px 15px;
+}
+.container-right.wide {
+    margin-left: 75px;
+}
+.container-right.narrow {
+    margin-left: 225px;
+}
+.ssc-grid, .ssc-grid .ssc-table {
+    width: 100%;
+    height: calc(100% - 50px);
+}
+.ssc-grid .ssc-table.opened {
+    visibility: visible;
+    opacity: 1;
+    height: calc(100% - 100px);
+}
+.ssc-grid .ssc-table.closed {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.ssc-grid {
+    padding-bottom: 50px;
+}
+.ssc-grid .grid-heading {
+    padding: 10px 20px;
+    background-color: #052950;
+    color: #FFFFFF;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+}
+.ssc-grid .grid-heading .accordion-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.container-right .btn-grp {
+    float: right;
+    margin-top: 20px;
+    margin-right: 2px;
+}
+.container-right .btn-grp .btn-primary {
+    background: #0985c7;
+    border-radius: 3px;
+    font-weight: 400;
+}
+.container-right .btn-grp .btn-primary.btn-left {
+    margin-right: 10px;
+}
+.tool-tip {
+    font-size: 15px;
+    white-space: pre-wrap;
+    color: #FFFFFF !important;
+    background-color: rgba(16, 126, 138, 1) !important;
+    max-width: unset !important;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
